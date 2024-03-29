@@ -56,18 +56,81 @@
 // obj.age = 23;
 // console.log(fres)
 
-function Persona(name, age, ville) {
-    this.name = name
-    this.age = age
-    this.ville = ville
+// function Persona(name, age, ville) {
+//     this.name = name
+//     this.age = age
+//     this.ville = ville
 
-    this.getID = function () {
-        console.log(this.name + " a " + this.age + " ans")
+//     // this.getID = function () {
+//     //     console.log(this.name + " a " + this.age + " ans")
+//     // }
+// }
+
+// const user = new Persona("Jull", 21, "Paris")
+// const user2 = new Persona("Risor", 71, "Paris")
+
+// console.log(typeof Persona)
+
+// function User(Pseudo, age, force) {
+//     return {
+//         Pseudo,
+//         age,
+//         force,
+
+//     }
+
+// }
+
+// const playUser = User("Nadir", 21, "intéligence existenciels")
+// console.log(typeof playUser)
+
+
+
+// class force {
+//     constructor(pouvoir, faiblaisse) {
+//         this.pouvoir = pouvoir;
+//         this.faiblaisse = faiblaisse;
+//     }
+
+//     badinjal = function () {
+//         console.log("hy" + this.pouvoir)
+
+//     }
+// }
+
+
+// const utilisation = new force("holopo", "machine de patate");
+
+// force.prototype.sayCity = function () {
+//     console.log("j'ai une " + this.faiblaisse)
+// }
+
+// Object.assign(force.prototype, {
+//     methode() {
+
+//     }
+
+// })
+
+// console.log(utilisation)
+
+
+class Animalc {
+    constructor(name, age) {
+        this.name = name,
+            this.age = age
+    }
+
+    leson(text) {
+        console.log(this.name + " a " + text)
     }
 }
 
-const user = new Persona("Jull", 21, "Paris")
-const user2 = new Persona("Risor", 71, "Paris")
+class chat extends Animalc {
+    bouge() {
+        console.log("le chat bouge")
+    }
+}
 
-console.log(user2.getID())
-
+const fiofio = new chat("miawe", 2)
+console.log(fiofio)
